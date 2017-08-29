@@ -1,0 +1,76 @@
+{
+	"name": "px2rem",
+	"displayName": "px2rem",
+	"description": "px转换成rem的插件",
+	"version": "0.0.1",
+	"publisher": "arturia",
+	"icon": "./img/icon.jpg",
+	"license": "MIT",
+	"licenseUrl": "LICENSE",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Formatters",
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:sass",
+		"onLanguage:stylus"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.px2rem",
+				"title": "px2rem"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "px2rem 配置",
+			"properties": {
+				"px2rem.rootFontSize": {
+					"type": "number",
+					"default": 16,
+					"description": "根目录font-size，默认：16px"
+				},
+				"px2rem.fixedDigits": {
+					"type": "number",
+					"default": 6,
+					"description": "rem保留小数位数，默认：6位。"
+				},
+				"px2rem.autoRemovePrefixZero": {
+					"type": "boolean",
+					"default": true,
+					"description": "自动移除0开头的前缀，默认：true"
+				},
+				"px2rem.isNeedNotes": {
+				    "type": "boolean",
+				    "default": true,
+				    "description": "是否需要开启注释，默认：true"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	}
+}
