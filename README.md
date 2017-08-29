@@ -4,6 +4,13 @@
 
 ![](https://ws1.sinaimg.cn/large/006d7zD3gy1fizw7ydqjhg30go0bze88.jpg)
 
+# 下载
+
+已经上架：[marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=arturiapendragon.px2rem)
+
+或者在vscode扩展中直接搜索`px2rem`安装即可
+
+
 # 说明
 
 px2rem：将px转换成rem的插件
