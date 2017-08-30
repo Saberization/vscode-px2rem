@@ -2,7 +2,9 @@
 
 一个CSS值转REM的VSCode插件
 
-![](https://ws1.sinaimg.cn/large/006d7zD3gy1fizw7ydqjhg30go0bze88.jpg)
+![](https://ws1.sinaimg.cn/large/006d7zD3gy1fj1h61g2dug30gn075npf.jpg)
+
+![](https://ws1.sinaimg.cn/large/006d7zD3gy1fj1h1dh4yrg30go08qhdx.jpg)
 
 # 下载
 

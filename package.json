@@ -4,7 +4,7 @@
 	"description": "px转换成rem的插件",
 	"version": "0.0.1",
 	"publisher": "arturiapendragon",
-	"icon": "icon.jpg",
+	"icon": "images/icon.jpg",
 	"license": "MIT",
 	"licenseUrl": "LICENSE",
 	"engines": {
